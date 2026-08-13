@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Hanken Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-primary: #6366f1;
+  --color-primary-container: #818cf8;
+  --color-success-green: #10b981;
+  --color-danger-red: #f43f5e;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-surface: #0c0e14;
+  --color-surface-white: rgba(255, 255, 255, 0.05);
+  --color-surface-container-low: rgba(255, 255, 255, 0.03);
+  --color-surface-container: rgba(255, 255, 255, 0.06);
+  --color-surface-container-high: rgba(255, 255, 255, 0.1);
+  --color-surface-container-highest: rgba(255, 255, 255, 0.15);
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: rgba(255, 255, 255, 0.7);
+  --color-text-muted: rgba(255, 255, 255, 0.4);
+}
+
+/* Custom scrollbar hiding and tabular numbers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.font-data-tabular {
+  font-family: 'JetBrains Mono', monospace;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-headline {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Frosted Glass Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  color: #ffffff;
+}
+.glass-input:focus {
+  border-color: rgba(99, 102, 241, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "ChartFlow",
+  "description": "Precision market analytics, real-time indices, stock screeners, and interactive financial charts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
